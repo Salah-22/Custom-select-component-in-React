@@ -1,0 +1,104 @@
+.container {
+  width: 80%;
+  height: 80vh;
+  border: 2px solid black;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 10px;
+  background-color: #eeeeee;
+  border-radius: 20px;
+}
+
+.select {
+  position: relative;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 80%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.select p {
+  padding-left: 10px;
+}
+
+.select .btn_container {
+  display: flex;
+  width: 10%;
+  height: 100%;
+}
+
+.select .btn_container .btn_open {
+  margin-left: auto;
+}
+
+.select .btn_container .btn_close {
+  display: none;
+}
+
+.select button {
+  width: 50%;
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+}
+
+.select .list {
+  position: absolute;
+  top: 40px;
+  background-color: inherit;
+  width: 100%;
+  display: none;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.select .list ul {
+  list-style: none;
+}
+
+.select .list ul li {
+  cursor: pointer;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  border-top: 1px solid #000;
+}
+
+.products {
+  overflow-y: auto;
+}
+
+.products .card_container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 0.5rem;
+}
+
+.products .card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 150px;
+  width: 45%;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.55) 0px 5px 15px;
+  background-color: #fff;
+}
+
+.products .card:hover {
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.95) 0px 5px 15px;
+}
+
+.products .card img {
+  width: 100px;
+  height: 100%;
+  border-radius: 10px;
+}
